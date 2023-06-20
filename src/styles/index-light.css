@@ -11,6 +11,7 @@ body{
   background-color: #F8F9FD;
   font-family: 'Quicksand';
   margin: 0;
+  padding: 0;
 }
 
 .title {
@@ -195,29 +196,31 @@ label.checkbox-label{
   background-color: #C6D8FF;
 }
 
+
+.item {
+  margin-bottom: 16px;
+}
+
 .panel {
   background-color: #A5C1FF;
 
   --base-margin: 8px;
-  margin: var(--base-margin) var(--base-margin) calc(2 * var(--base-margin)) var(--base-margin);
-
-  height: 0px;
+  margin: var(--base-margin) var(--base-margin) 0 var(--base-margin);
+  height: auto;
   width: auto;
   padding: 0 18px;
   font-size: 16px;
   overflow: hidden;
-  border: none;
+  border: 1px solid #2563EB;
   border-radius: 15px;
-  transition: width 2s, height .5s;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  
 }
 
-.panel.active {
-  height: 130px;
-  border: 1px solid #2563EB;
-  transition: width 2s, height .5s;
+.panel.not-ready{
+  display: none;
 }
 
 .panel p {
@@ -260,11 +263,11 @@ label.checkbox-label{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   justify-items: center;
-  gap: 30px;
+  gap: 160px;
 }
 
 .draw img{
-  margin: 0px 80px 0px 0px;
+  align-items: center;
   width: 350px;
   height: auto;
   border-radius: 10%;
@@ -276,3 +279,4 @@ label.checkbox-label{
 .draw img:hover {
   opacity: 0.3;
 }
+

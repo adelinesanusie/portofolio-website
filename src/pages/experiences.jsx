@@ -9,19 +9,32 @@ import KMK from "../assets/KMK.png"
 import Compfest from "../assets/COMPFEST.png"
 import PMB from "../assets/PMB.png"
 import Perak from "../assets/PERAK.png"
-
+import $ from "jquery";
+import { useEffect } from "react"
 
 
 function Experiences() {
+
     const expandPanel = (index) => {
         const panel  = document.getElementsByClassName("panel")
-        if (panel[index].classList.contains("active")) {
-            panel[index].classList.remove("active")
+        const targetPanel = panel[index];
+        if (targetPanel.classList.contains("active")) {
+            targetPanel.classList.remove("active");
+            $(targetPanel).slideUp();
         }
         else {
-            panel[index].classList.add("active")
+            targetPanel.classList.add("active");
+            $(targetPanel).slideDown();
         }
     }
+
+    useEffect(() => {
+        const allPanels = $(document.getElementsByClassName("panel"))
+        allPanels.slideUp(0, () => {
+            allPanels.removeClass("not-ready");
+        });
+    }, []);
+
     return (
         <div class="accordion-page">
         {/* WORK */}
@@ -39,7 +52,7 @@ function Experiences() {
                             <span class="date">May 2023 - July 2023</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>As a Toko Digital intern, I have developed a plant disease detection application which is a comprehensive digital solution designed to support sustainable agriculture, empower farmers with accurate disease identification, and provide valuable insights for effective disease management.</p>
                         <li>...</li>
                         <a href="https://www.figma.com/proto/UoMqrbbWroGLMcg5tOYI8z/Aplikasi-Pendeteksi-Penyakit-Tanaman---Toko-Dizital?page-id=0%3A1&type=design&node-id=30-53&viewport=-305%2C-799%2C0.22&scaling=min-zoom&starting-point-node-id=30%3A53&show-proto-sidebar=1" class="button" target="_blank">Prototype</a>
@@ -56,7 +69,7 @@ function Experiences() {
                             <span class="date">March 2023 - Present</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>The Student Executive Board of the Faculty of Administrative Science requires a website for the registration of Student Executive Board 2023 members.</p>
                         <li>...</li>
                         <div class="button-group">
@@ -83,7 +96,7 @@ function Experiences() {
                             <span class="date">June 2023</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>Berdonasi is a platform that enables individuals to provide monetary or product donations to those in need.
                             One of the advantages of Berdonasi is the ability to donate essential products such as groceries.
                         </p>
@@ -102,7 +115,7 @@ function Experiences() {
                             <span class="date">December 2022</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>...</p>
                         <li>...</li>
                         <a href="https://www.figma.com/proto/0t8GP8z5Iypr8uQoDBt9ph/Fin-Ed---Pengajaran-Berbantuan-Komputer?page-id=53%3A1982&type=design&node-id=213-4&viewport=590%2C649%2C0.21&scaling=min-zoom&starting-point-node-id=213%3A4" class="button" target="_blank">Prototype</a>
@@ -119,7 +132,7 @@ function Experiences() {
                             <span class="date">June 2022</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>...</p>
                         <li>...</li>
                         <a href="https://www.figma.com/proto/22qxtJwMPAS259KwTv70ON/KonserKan---Sistem-Interaksi?page-id=133%3A77&type=design&node-id=128-1840&viewport=533%2C773%2C0.31&scaling=min-zoom&starting-point-node-id=128%3A1840" class="button" target="_blank">Prototype</a>
@@ -143,7 +156,7 @@ function Experiences() {
                             <span class="date">February 2023 - July 2023</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>Independent Machine Learning Developer Study activities include individual learning and a final team project. In individual learning, each participant will take online classes through learning modules on Dicoding Academy and Coursera.</p>
                         <li>...</li>
                     </div>
@@ -159,7 +172,7 @@ function Experiences() {
                             <span class="date">March 2021 - January 2023</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>The Department of Research and Strategic Action is a department that plays a crucial role as the driving force behind the student movement in the Faculty of Computer Science at the University of Indonesia. This department is focused on creative studies to popularize issues and is responsive to various movements and tangible actions as a form of contribution and response to social and political issues at the faculty, university, national, and international levels.</p>
                         <li>Designed an infographics content about social politics which was viewed by 5500+ until 6000+ followers</li>
                         <li>Responsible for the planning of UI Gerak Bersama event held by the Faculty of Law, University of Indonesia</li>
@@ -176,7 +189,7 @@ function Experiences() {
                             <span class="date">February 2021 - December 2022</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>...</p>
                         <li>...</li>
                     </div>
@@ -192,7 +205,7 @@ function Experiences() {
                             <span class="date">March 2021 - November 2022</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>COMPFEST is the largest annual Technology Science event organized by the students of the Faculty of Computer Science, University of Indonesia.</p>
                         <li>...</li>
                     </div>
@@ -208,7 +221,7 @@ function Experiences() {
                             <span class="date">July 2021 - November 2021</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>...</p>
                         <li>...</li>
                     </div>
@@ -224,7 +237,7 @@ function Experiences() {
                             <span class="date">February 2021 - May 2021</span>
                         </div>
                     </button>
-                    <div class="panel" id="panel">
+                    <div class="panel  not-ready" id="panel">
                         <p>...</p>
                         <li>...</li>
                     </div>
