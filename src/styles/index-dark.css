@@ -9,11 +9,11 @@ body.dark {
 
 body.dark .topnav {
     background-color: #292c35;
-    border-bottom-color: #FFF;
+    border-bottom-color: #FFFFFF;
 }
 
 body.dark .topnav a {
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 body.dark .home {
@@ -21,7 +21,7 @@ body.dark .home {
 }
 
 body.dark .home p{
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 body.dark .accordion-page {
@@ -33,21 +33,25 @@ body.dark .accordion {
 }
 
 body.dark .accordion span {
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 body.dark .panel {
     background-color: #3e4352;
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 body.dark .button {
-    background-color: #fff;
+    background-color: #FFFFFF;
     color: #292c35;
 }
 
 body.dark .button-group {
-    color: #FFF;
+    color: #FFFFFF;
+}
+
+body.dark .gallery p{
+    color: #FFFFFF;
 }
   
 /* TOOGLE BUTTON */

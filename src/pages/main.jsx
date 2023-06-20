@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import Home from "./home";
 import Experiences from "./experiences";
 import Gallery from "./gallery";
+import Skills from "./skills";
 
 function Main() {
   return (
@@ -10,6 +11,7 @@ function Main() {
     <Home />
     <Experiences />
     <Gallery />
+    <Skills />
     </>
   );
 }

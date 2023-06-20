@@ -29,6 +29,7 @@ function Navbar() {
         <a href="#home">Home</a>
         <a href="#experiences">Experiences</a>
         <a href="#gallery">Gallery</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
         <input
           type="checkbox"

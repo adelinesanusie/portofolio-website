@@ -3,15 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.min.css";
 
-import Spiderman from "../assets/Spiderman.jpg";
-import Thor from "../assets/Thor.jpg";
-import Marvel from "../assets/Marvel.jpg";
-import TheIncredibles from "../assets/TheIncredibles.jpg";
-import Yoda from "../assets/Yoda.jpg";
-import KobeGianna from "../assets/KobeGianna.jpg";
-import HarryPotter from "../assets/HarryPotter.jpg";
-import TheBeatles from "../assets/TheBeatles.jpg";
-import NelsonMandela from "../assets/NelsonMandela.jpg";
+import Spiderman from "../assets/Gallery/Spiderman.jpg";
+import Thor from "../assets/Gallery/Thor.jpg";
+import Marvel from "../assets/Gallery/Marvel.jpg";
+import TheIncredibles from "../assets/Gallery/TheIncredibles.jpg";
+import Yoda from "../assets/Gallery/Yoda.jpg";
+import KobeGianna from "../assets/Gallery/KobeGianna.jpg";
+import HarryPotter from "../assets/Gallery/HarryPotter.jpg";
+import TheBeatles from "../assets/Gallery/TheBeatles.jpg";
+import NelsonMandela from "../assets/Gallery/NelsonMandela.jpg";
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Autoplay]);
@@ -29,18 +29,41 @@ function Gallery() {
     { id: 9, src: NelsonMandela, alt: "NelsonMandela" },
   ];
 
-  const swiperRef = useRef(null); // Create a reference for the Swiper component
+  const galleryRef = useRef(null);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
-    if (swiperRef.current !== null) {
-      swiperRef.current.swiper.autoplay.start(); // Start the autoplay when the component mounts
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          swiperRef.current.swiper.autoplay.start(); // Start the autoplay when the gallery section becomes visible
+        } else {
+          swiperRef.current.swiper.autoplay.stop(); // Stop the autoplay when the gallery section is not visible
+        }
+      });
+    }, options);
+
+    if (galleryRef.current) {
+      observer.observe(galleryRef.current); // Start observing the gallery section
     }
+
+    return () => {
+      if (galleryRef.current) {
+        observer.unobserve(galleryRef.current); // Stop observing the gallery section when the component unmounts
+      }
+    };
   }, []);
 
   return (
-    <div className="gallery" id="gallery">
-      <div className="container-gallery swiper-container">
-        <div className="title-gallery">
+    <div class="gallery" id="gallery" ref={galleryRef}>
+      <div class="container-gallery swiper-container">
+        <div class="title-gallery">
           <h2>DRAWING COLLECTIONS</h2>
           <p>
             Welcome to my Drawing Collections! I dedicate these drawings to my parents who have guided me since childhood in the journey of learning to draw. Hope you find joy and inspiration in these drawings, enjoy!
