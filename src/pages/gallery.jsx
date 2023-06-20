@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.min.css";
@@ -29,19 +29,34 @@ function Gallery() {
     { id: 9, src: NelsonMandela, alt: "NelsonMandela" },
   ];
 
+  const swiperRef = useRef(null); // Create a reference for the Swiper component
+
+  useEffect(() => {
+    if (swiperRef.current !== null) {
+      swiperRef.current.swiper.autoplay.start(); // Start the autoplay when the component mounts
+    }
+  }, []);
+
   return (
     <div className="gallery" id="gallery">
-      <div className="container-gallery swiper-container"> {/* Added "swiper-container" class */}
+      <div className="container-gallery swiper-container">
         <div className="title-gallery">
           <h2>DRAWING COLLECTIONS</h2>
-          <p></p>
+          <p>
+            Welcome to my Drawing Collections! I dedicate these drawings to my parents who have guided me since childhood in the journey of learning to draw. Hope you find joy and inspiration in these drawings, enjoy!
+          </p>
         </div>
         <Swiper
+          ref={swiperRef}
           spaceBetween={50}
           slidesPerView={3}
           navigation
           loop
-          autoplay={{ delay: 2500 }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          shouldSwiperUpdate
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
         >

@@ -257,7 +257,8 @@ label.checkbox-label{
   font-weight: 700;
 }
 
-.rounded-image {
-  border-radius: 10%;
-  overflow: visible;
+.gallery p{
+  padding: 0px 0px 20px 0px;
+  font-size: 24px;
+  font-weight: 500;
 }
