@@ -36,7 +36,7 @@ function Experiences() {
                         <div>
                             <span class="title">Toko Dizital Intern</span><br/>
                             <span class="subtitle">UI/UX Designer and Machine Learning Engineer</span><br/>
-                            <span class="subtitle">May 2023 - July 2023</span>
+                            <span class="date">May 2023 - July 2023</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -53,7 +53,7 @@ function Experiences() {
                         <div>
                             <span class="title">Student Executive Board of the Faculty of Administrative Science Website</span><br/>
                             <span class="subtitle">UI/UX Designer</span><br/>
-                            <span class="subtitle">March 2023 - Present</span>
+                            <span class="date">March 2023 - Present</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -80,7 +80,7 @@ function Experiences() {
                         <div>
                             <span class="title">Berdonasi Mobile Application</span><br/>
                             <span class="subtitle">UI/UX Designer and FrontEnd Engineer</span><br/>
-                            <span class="subtitle">June 2023</span>
+                            <span class="date">June 2023</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -99,7 +99,7 @@ function Experiences() {
                         <div>
                             <span class="title">Fin-Ed Mobile Application</span><br/>
                             <span class="subtitle">UI/UX Designer</span><br/>
-                            <span class="subtitle">December 2022</span>
+                            <span class="date">December 2022</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -116,7 +116,7 @@ function Experiences() {
                         <div>
                             <span class="title">KonserKan Mobile Application</span><br/>
                             <span class="subtitle">UI/UX Designer and Researcher</span><br/>
-                            <span class="subtitle">June 2022</span>
+                            <span class="date">June 2022</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -140,7 +140,7 @@ function Experiences() {
                         <div>
                             <span class="title">Bangkit Academy 2023 By Google, Gojek, Tokopedia, & Traveloka</span><br/>
                             <span class="subtitle">Machine Learning Path</span><br/>
-                            <span class="subtitle">February 2023 - July 2023</span>
+                            <span class="date">February 2023 - July 2023</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -156,7 +156,7 @@ function Experiences() {
                         <div>
                             <span class="title">Student Executive Board of the Faculty of Computer Science</span><br/>
                             <span class="subtitle">Staff of Research and Strategic Action</span><br/>
-                            <span class="subtitle">March 2021 - January 2023</span>
+                            <span class="date">March 2021 - January 2023</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -173,7 +173,7 @@ function Experiences() {
                         <div>
                             <span class="title">Catholic Student Organization of the Faculty of Computer Science</span><br/>
                             <span class="subtitle">Staff of Event & Person in Charge of Event</span><br/>
-                            <span class="subtitle">February 2021 - December 2022</span>
+                            <span class="date">February 2021 - December 2022</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -189,7 +189,7 @@ function Experiences() {
                         <div>
                             <span class="title">COMPFEST</span><br/>
                             <span class="subtitle">Staff of Sponsorship & Staff of Playground wih Job and Intern Fair</span><br/>
-                            <span class="subtitle">March 2021 - November 2022</span>
+                            <span class="date">March 2021 - November 2022</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -205,7 +205,7 @@ function Experiences() {
                         <div>
                             <span class="title">Freshman Orientation of the Faculty of Computer Science</span><br/>
                             <span class="subtitle">Staff of Event</span><br/>
-                            <span class="subtitle">July 2021 - November 2021</span>
+                            <span class="date">July 2021 - November 2021</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
@@ -221,7 +221,7 @@ function Experiences() {
                         <div>
                             <span class="title">PERAK</span><br/>
                             <span class="subtitle">Staff of Competitive Games</span><br/>
-                            <span class="subtitle">February 2021 - May 2021</span>
+                            <span class="date">February 2021 - May 2021</span>
                         </div>
                     </button>
                     <div class="panel" id="panel">
