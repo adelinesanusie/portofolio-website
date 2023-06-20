@@ -6,7 +6,7 @@ function Home() {
         <div class="home" id="home">
             <div class="container-home">
                 <div class="title-home">
-                    <h3>THIS IS ME</h3>
+                    <h2>THIS IS ME</h2>
                     <h1>ADELINE SANUSIE</h1>
                     <p>I’m an undergraduate student from University of Indonesia, majoring in Computer Science.
                         I'm deeply passionate about drawing, photography, and sports.

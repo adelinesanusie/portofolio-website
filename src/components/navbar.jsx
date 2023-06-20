@@ -7,12 +7,22 @@ function Navbar() {
     if(theme === ""){
       setTheme("dark")
       document.body.classList.toggle("dark")
+      localStorage.setItem("theme", "dark");
     }
     else {
-      document.body.classList.remove("dark")
-      setTheme("")
+      setTheme("");
+      document.body.classList.remove("dark");
+      localStorage.setItem("theme", "");
     }
   }
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
+      setTheme("dark");
+      document.body.classList.add("dark");
+    }
+  }, []);
 
   return (
     <nav class="topnav">
@@ -20,12 +30,18 @@ function Navbar() {
         <a href="#experiences">Experiences</a>
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
-        <input type="checkbox" class="checkbox" id="checkbox" onChange={() => changeTheme()}/>
-        <label for="checkbox" className="checkbox-label">
-            <i class="fas fa-sun"></i>
-            <i class="fas fa-moon"></i>
-            <span class="ball"></span>
-        </label>
+        <input
+          type="checkbox"
+          className="checkbox"
+          id="checkbox"
+          onChange={() => changeTheme()}
+          checked={theme === "dark"}
+        />
+        <label htmlFor="checkbox" className="checkbox-label">
+          <i className="fas fa-sun"></i>
+          <i className="fas fa-moon"></i>
+          <span className="ball"></span>
+      </label>
     </nav>
   );
 }
