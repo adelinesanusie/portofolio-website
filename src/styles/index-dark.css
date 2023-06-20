@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DARK MODE */
+body.dark {
+    background-color: #292c35;
+}
+
+body.dark .topnav {
+    background-color: #292c35;
+    border-bottom-color: #FFF;
+}
+
+body.dark .topnav a {
+    color: #FFF;
+}
+
+body.dark .home {
+    background-color: #292c35;
+}
+
+body.dark .home p{
+    color: #FFF;
+}
+
+body.dark .accordion-page {
+    background-color: #23262d;
+}
+
+body.dark .accordion {
+    background-color: #343942;
+}
+
+body.dark .accordion span {
+    color: #FFF;
+}
+
+body.dark .panel {
+    background-color: #3e4352;
+    color: #FFF;
+}
+
+body.dark .button {
+    background-color: #fff;
+    color: #292c35;
+}
+
+body.dark .button-group {
+    color: #FFF;
+}
+  
+/* TOOGLE BUTTON */
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 18px;
+    border-radius: 100px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa-moon {
+    color: #FFFFFF;}
+
+.fa-sun {
+    color: #FFFFFF;}
+
+.sky {
+    width: 5px;
+    height: 5px;
+}
+
+.checkbox-label .ball {
+    background-color: #FFFFFF;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+    top: 15%;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(36px);
+}

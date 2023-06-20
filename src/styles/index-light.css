@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #F8F9FD;
+  font-family: "Quicksand";
+  margin: 0;
+}
+
+.title {
+  font-family: "Quicksand";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: "Quicksand";
+  font-size: 16px;
+}
+
+/* TOP NAVIGATION */
+.topnav{
+  background-color: #FFFFFF;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #C6D8FF;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.topnav a{
+  color: #000000;
+  float: right;
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  color: #2563EB;
+  background-color: #E4E9FF;
+}
+
+/* HOME */
+.home{
+  background-color: #F8F9FD;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container-home{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-home{
+  flex-basis: 50%;
+}
+
+.home h3{
+  background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0px 0px 0px 80px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-block-start: 0.1em;
+  margin-block-end: 0.1em;
+}
+
+.home h1{
+  background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0px 0px 0px 80px;
+  font-size: 72px;
+  margin-block-start: 0em;
+  margin-block-end: 0.1em;
+}
+
+.home p{
+  padding: 0px 0px 0px 80px;
+  margin-block-start: 0em;
+  margin-block-end: 0.1em;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 20px;
+  /* responsive text */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.profile img{
+  margin: 0px 80px 0px 0px;
+  width: 450px;
+  border-radius: 100%;
+}
+
+/* EXPERIENCES */
+.accordion-page {
+  background-color: #E4E9FF;
+  padding-bottom: 100px;
+  height: auto;
+}
+
+.accordion-page h2{
+  color: #2563EB;
+  padding: 20px 0px 0px 80px;
+  font-size: 24px;
+}
+
+.work h2{
+  color: #2563EB;
+  padding: 80px 0px 0px 80px;
+  font-size: 24px;
+}
+
+/* ACCORDION */
+.main-accordion {
+  --horizontal-margin: 80px;
+  margin-left: var(--horizontal-margin);
+  margin-right: calc(2 * var(--horizontal-margin));
+  width: auto;
+  height: 100%;
+  border: none;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.accordion{
+  background-color: #F8F9FD;
+  
+  /* 
+  gua ga terlalu menentang calc(), 
+  tapi biasanya kalo ada cara lain yang tanpa calc(), gua lebih prefer */
+  /* width: calc(100% - 80px); */
+  width: 100%;
+
+  height: 100%;
+  text-align: left;
+  border: 1px solid #2563EB;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.accordion img {
+  margin: 8px;
+
+  
+  width: 80px;  
+
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion span {
+  margin-left: 10px;
+}
+
+.active, .accordion:hover {
+  background-color: #C6D8FF;
+}
+
+.panel {
+  background-color: #A5C1FF;
+
+  --base-margin: 8px;
+  margin: var(--base-margin) var(--base-margin) calc(2 * var(--base-margin)) var(--base-margin);
+
+  height: 0px;
+  width: auto;
+  padding: 0 18px;
+  font-size: 16px;
+  overflow: hidden;
+  border: none;
+  border-radius: 15px;
+  transition: width 2s, height .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.panel.active {
+  height: 130px;
+  border: 1px solid #2563EB;
+  transition: width 2s, height .5s;
+}
+
+.panel p {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.button {
+  background-color: #2563EB;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 8px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  align-self: flex-end;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  align-self: flex-end;
+}
+
+/* GALLERY */
+.gallery {
+  height: 100vh;
+}
+
+.container-gallery {
+  padding: 0 80px;
+}
+
+.gallery h2{
+  color: #2563EB;
+  padding-top: 80px;
+  font-size: 24px;
+}
+
+.draw {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  gap: 30px;
+}
+
+.draw img{
+  margin: 0px 80px 0px 0px;
+  width: 350px;
+  height: auto;
+  border-radius: 10%;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.draw img:hover {
+  opacity: 0.3;
+}
+label.checkbox-label{
+  margin-right: 20px;
+}
