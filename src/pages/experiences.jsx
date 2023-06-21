@@ -36,9 +36,9 @@ function Experiences() {
     }, []);
 
     return (
-        <div class="accordion-page" id="experiences">
+        <div class="accordion-page">
         {/* WORK */}
-        <div class="work">
+        <div class="work" id="experiences">
             <h2>WORKING EXPERIENCES</h2>
             <div class="main-accordion">
                 <div class="item">
@@ -85,7 +85,7 @@ function Experiences() {
         </div>
 
         {/* PROJECT */}
-        <div class="project">
+        <div class="project" id="experiences">
             <br></br>
             <h2>PROJECT EXPERIENCES</h2>
             <div class="main-accordion">
@@ -156,7 +156,7 @@ function Experiences() {
         </div>
 
         {/* LEADERSHIP */}
-        <div class="activities">
+        <div class="activities" id="experiences">
             <br></br>
             <h2>ACTIVITIES AND LEADERSHIP EXPERIENCES</h2>
             <div class="main-accordion">
