@@ -9,6 +9,11 @@ import NodeJs from "../assets/Skills/NodeJs.png";
 import ReactJs from "../assets/Skills/ReactJs.png";
 import HTML from "../assets/Skills/HTML.png";
 import CSS from "../assets/Skills/CSS.png";
+import Figma from "../assets/Skills/Figma.png";
+import AdobeXD from "../assets/Skills/AdobeXD.png";
+import AdobePhotoshop from "../assets/Skills/AdobePhotoshop.png";
+import AdobeIllustrator from "../assets/Skills/AdobeIllustrator.png";
+import Procreate from "../assets/Skills/Procreate.png";
 
 function Skills() {
     return (
@@ -68,6 +73,32 @@ function Skills() {
               <div className="skill-item">
                 <img src={CSS} alt="CSS" />
                 <span className="skill-name">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="skills-category">
+            <h2>DESIGN TOOLS</h2>
+            <div className="skills-row">
+              <div className="skill-item">
+                <img src={Figma} alt="Figma" />
+                <span className="skill-name">Figma</span>
+              </div>
+              <div className="skill-item">
+                <img src={AdobeXD} alt="AdobeXD" />
+                <span className="skill-name">Adobe XD</span>
+              </div>
+              <div className="skill-item">
+                <img src={AdobePhotoshop} alt="AdobePhotoshop" />
+                <span className="skill-name">Adobe Photoshop</span>
+              </div>
+              <div className="skill-item">
+                <img src={AdobeIllustrator} alt="AdobeIllustrator" />
+                <span className="skill-name">Adobe Illustrator</span>
+              </div>
+              <div className="skill-item">
+                <img src={Procreate} alt="Procreate" />
+                <span className="skill-name">Procreate</span>
               </div>
             </div>
           </div>
