@@ -3,15 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Autoplay } from "swiper";
 import "swiper/swiper.min.css";
 
-import Spiderman from "../assets/Gallery/Spiderman.jpg";
-import Thor from "../assets/Gallery/Thor.jpg";
-import Marvel from "../assets/Gallery/Marvel.jpg";
-import TheIncredibles from "../assets/Gallery/TheIncredibles.jpg";
-import Yoda from "../assets/Gallery/Yoda.jpg";
-import KobeGianna from "../assets/Gallery/KobeGianna.jpg";
-import HarryPotter from "../assets/Gallery/HarryPotter.jpg";
-import TheBeatles from "../assets/Gallery/TheBeatles.jpg";
-import NelsonMandela from "../assets/Gallery/NelsonMandela.jpg";
+import Spiderman from "../assets/Gallery/Spiderman.png";
+import Thor from "../assets/Gallery/Thor.png";
+import Marvel from "../assets/Gallery/Marvel.png";
+import TheIncredibles from "../assets/Gallery/TheIncredibles.png";
+import Yoda from "../assets/Gallery/Yoda.png";
+import KobeGianna from "../assets/Gallery/KobeGianna.png";
+import HarryPotter from "../assets/Gallery/HarryPotter.png";
+import TheBeatles from "../assets/Gallery/TheBeatles.png";
+import NelsonMandela from "../assets/Gallery/NelsonMandela.png";
 
 // Install Swiper modules
 SwiperCore.use([Navigation, Autoplay]);

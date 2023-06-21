@@ -72,8 +72,7 @@ label.checkbox-label{
   height: auto;
   justify-content: center;
   align-items: center;
-  padding-top: 210px;
-  padding-bottom: 210px;
+  padding: 210px 80px 210px 80px;
 }
 
 .container-home{
@@ -90,9 +89,8 @@ label.checkbox-label{
   background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0px 0px 0px 80px;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   margin-block-start: 0.1em;
   margin-block-end: 0.1em;
 }
@@ -101,21 +99,19 @@ label.checkbox-label{
   background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0px 0px 0px 80px;
-  font-size: 80px;
+  font-size: 88px;
   font-weight: 700;
   margin-block-start: 0em;
   margin-block-end: 0.1em;
 }
 
 .home p{
-  padding: 0px 0px 0px 80px;
-  margin-block-start: 0em;
-  margin-block-end: 0.1em;
   text-align: justify;
   text-justify: inter-word;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
+  margin-block-start: 0em;
+  margin-block-end: 0.1em;
   /* responsive text */
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -123,8 +119,7 @@ label.checkbox-label{
 }
 
 .profile img{
-  margin: 0px 80px 0px 0px;
-  width: 450px;
+  width: 500px;
   border-radius: 100%;
 }
 
@@ -139,7 +134,7 @@ label.checkbox-label{
 .accordion-page h2{
   color: #2563EB;
   padding: 0px 0px 20px 80px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -247,6 +242,11 @@ label.checkbox-label{
   padding-bottom: 80px;
 }
 
+.gallery img{
+  max-width: 100%;
+  height: auto;
+}
+
 .container-gallery {
   padding: 0 80px;
 }
@@ -254,13 +254,13 @@ label.checkbox-label{
 .gallery h2{
   color: #2563EB;
   padding: 0px 0px 20px 0px;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .gallery p{
   padding: 0px 0px 20px 0px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 
@@ -268,8 +268,8 @@ label.checkbox-label{
 .skills {
   background-color: #E4E9FF;
   height: auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .container-skills {
@@ -278,19 +278,19 @@ label.checkbox-label{
 
 .skills h2 {
   color: #2563EB;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .skills img {
-  margin: 20px 40px 10px 40px;
-  width: 160px;
-  height: 160px;
+  margin: 20px 20px 10px 20px;
+  width: 140px;
+  height: 140px;
   position: relative;
 }
 
 .skills-category {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .skills-row {
@@ -301,7 +301,14 @@ label.checkbox-label{
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  text-decoration: none;
+}
+
+.skill-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
 
 .skill-item:hover img {
@@ -310,7 +317,7 @@ label.checkbox-label{
 
 .skill-name {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 600;
   margin-top: 8px;
   text-align: center;
   opacity: 0;
