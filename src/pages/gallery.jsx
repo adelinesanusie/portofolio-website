@@ -61,7 +61,7 @@ function Gallery() {
   }, []);
 
   return (
-    <div class="gallery" id="gallery" ref={galleryRef}>
+    <div class="gallery" id="gallery">
       <div class="container-gallery swiper-container">
         <div class="title-gallery">
           <h2>ART GALLERY</h2>

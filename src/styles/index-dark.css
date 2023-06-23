@@ -73,6 +73,7 @@ body.dark .accordion span {
 
 body.dark .panel {
     background-color: #353A45;
+    border: 1px solid #A5C1FF;
     color: #FFFFFF;
 }
 
@@ -119,15 +120,12 @@ body.dark .gallery h2{
     align-items: center;
 }
 
-.fa-moon {
-    color: #FFFFFF;}
+.fa-moon, .fa-sun {
+    color: #FFFFFF;
+}
 
-.fa-sun {
-    color: #FFFFFF;}
-
-.sky {
-    width: 5px;
-    height: 5px;
+body.dark .fa-moon, .fa-sun {
+    color: #000000;
 }
 
 .checkbox-label .ball {
@@ -151,7 +149,7 @@ body.dark .skills {
     background-color: #121212;
 }
 
-.skills h2 {
+body.dark .skills h2 {
     background: linear-gradient(to right, #7A73F0, #F05E6F 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -160,5 +158,16 @@ body.dark .skills {
 body.dark .item-container {
     background-color: #23262D;
     border: 1px solid #A5C1FF;
+    color: #FFFFFF;
+}
+
+/* CONTACT */  
+body.dark .title-contact h2 {
+    background: linear-gradient(to right, #7A73F0, #F05E6F 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.dark .social-gmail .title {
     color: #FFFFFF;
 }

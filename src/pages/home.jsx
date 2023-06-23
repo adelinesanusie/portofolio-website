@@ -4,6 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 import ProfilePicture from "../assets/profile-picture2.jpg";
 
 function Home() {
+  
   return (
     <div className="home" id="home">
       <div className="container-home">
@@ -19,7 +20,6 @@ function Home() {
               "I'm also a Frontend Engineer",
               1500,
             ]}
-            cursor={true}
             repeat={Infinity}
             speed={1}
             deletionSpeed={40}
