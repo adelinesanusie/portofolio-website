@@ -25,25 +25,27 @@ function Navbar() {
   }, []);
 
   return (
-    <nav class="topnav">
-        <a href="#home">Home</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-        <input
-          type="checkbox"
-          className="checkbox"
-          id="checkbox"
-          onChange={() => changeTheme()}
-          checked={theme === "dark"}
-        />
-        <label htmlFor="checkbox" className="checkbox-label">
-          <i className="fas fa-sun"></i>
-          <i className="fas fa-moon"></i>
-          <span className="ball"></span>
-      </label>
-    </nav>
+    <div className="topnav-outside">
+      <nav class="topnav">
+          <a href="#home">Home</a>
+          <a href="#experiences">Experiences</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <input
+            type="checkbox"
+            className="checkbox"
+            id="checkbox"
+            onChange={() => changeTheme()}
+            checked={theme === "dark"}
+          />
+          <label htmlFor="checkbox" className="checkbox-label">
+            <i className="fas fa-sun"></i>
+            <i className="fas fa-moon"></i>
+            <span className="ball"></span>
+        </label>
+      </nav>
+    </div>
   );
 }
 

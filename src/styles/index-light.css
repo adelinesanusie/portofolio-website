@@ -11,7 +11,6 @@ body{
   background-color: #F8F9FD;
   font-family: 'Quicksand';
   margin: 0;
-  padding: 0;
 }
 
 .title {
@@ -33,22 +32,28 @@ body{
 }
 
 /* TOP NAVIGATION */
+.topnav-outside{
+  padding: 20px 80px 0px 80px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .topnav{
-  background-color: #FFFFFF;
-  width: 100%;
+  background-color: #D8E2FE;
+  width: auto;
   height: auto;
-  border-bottom: 2px solid #C6D8FF;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border: 1px solid #A5C1FF;
+  border-radius: 100px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-end;
 }
 
 .topnav a{
-  color: #000000;
+  color: #A5C1FF;
   float: right;
-  padding: 16px 40px 16px 40px;
+  padding: 24px 40px 24px 40px;
   text-align: center;
   text-decoration: none;
   font-size: 24px;
@@ -57,12 +62,13 @@ body{
 
 .topnav a:hover {
   color: #2563EB;
-  background-color: #E4E9FF;
+  text-decoration: underline;
 }
 
 label.checkbox-label{
   margin-right: 20px;
   margin-left: 20px;
+  background-color: #2563EB;
 }
 
 /* HOME */
@@ -72,7 +78,7 @@ label.checkbox-label{
   height: auto;
   justify-content: center;
   align-items: center;
-  padding: 210px 80px 210px 80px;
+  padding: 140px 80px 140px 80px;
 }
 
 .container-home{
@@ -82,7 +88,7 @@ label.checkbox-label{
 }
 
 .title-home{
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 
 .home h2{
@@ -99,7 +105,7 @@ label.checkbox-label{
   background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 88px;
+  font-size: 56px;
   font-weight: 700;
   margin-block-start: 0em;
   margin-block-end: 0.1em;
@@ -119,20 +125,22 @@ label.checkbox-label{
 }
 
 .profile img{
-  width: 500px;
+  width: 450px;
   border-radius: 100%;
 }
 
 /* EXPERIENCES */
 .accordion-page {
-  background-color: #E4E9FF;
-  padding-top: 80px;
+  background-color: #F1F3FE;
+  padding-top: 120px;
   padding-bottom: 80px;
   height: auto;
 }
 
 .accordion-page h2{
-  color: #2563EB;
+  background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding: 0px 0px 20px 80px;
   font-size: 24px;
   font-weight: 700;
@@ -178,7 +186,6 @@ label.checkbox-label{
 .active, .accordion:hover {
   background-color: #C6D8FF;
 }
-
 
 .item {
   margin-bottom: 16px;
@@ -238,7 +245,7 @@ label.checkbox-label{
 .gallery {
   background-color: #F8F9FD;
   height: auto;
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 80px;
 }
 
@@ -252,7 +259,9 @@ label.checkbox-label{
 }
 
 .gallery h2{
-  color: #2563EB;
+  background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   padding: 0px 0px 20px 0px;
   font-size: 24px;
   font-weight: 700;
@@ -266,10 +275,10 @@ label.checkbox-label{
 
 /* SKILLS */
 .skills {
-  background-color: #E4E9FF;
+  background-color: #F1F3FE;
   height: auto;
-  padding-top: 80px;
-  padding-bottom: 40px;
+  padding-top: 120px;
+  padding-bottom: 140px;
 }
 
 .container-skills {
@@ -277,53 +286,54 @@ label.checkbox-label{
 }
 
 .skills h2 {
-  color: #2563EB;
+  background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 24px;
   font-weight: 700;
 }
 
-.skills img {
-  margin: 20px 20px 10px 20px;
-  width: 140px;
-  height: 140px;
+.three-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-container {
+  background-color: #F8F9FD;
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #2563EB;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.my-skill img {
+  margin: 0px 10px;
+  width: 100px;
+  height: 100px;
   position: relative;
 }
 
-.skills-category {
-  margin-bottom: 20px;
-}
-
-.skills-row {
+.my-skill {
   display: flex;
-}
-
-.skill-item {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  text-decoration: none;
-}
-
-.skill-item a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-}
-
-.skill-item:hover img {
-  transform: scale(1.15);
-}
-
-.skill-name {
-  font-size: 20px;
-  font-weight: 600;
-  margin-top: 8px;
   text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  justify-content: center;
+  padding: 10px;
 }
 
-.skill-item:hover .skill-name {
-  opacity: 1;
+.application-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.application-skill img {
+  margin: 20px 10px 0px 10px;
+  width: 60px;
+  height: 60px;
+}
+
+.application-skill :hover img {
+  transform: scale(1.15);
 }

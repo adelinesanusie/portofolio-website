@@ -64,9 +64,11 @@ function Gallery() {
     <div class="gallery" id="gallery" ref={galleryRef}>
       <div class="container-gallery swiper-container">
         <div class="title-gallery">
-          <h2>DRAWING COLLECTIONS</h2>
+          <h2>ART GALLERY</h2>
           <p>
-            Welcome to my Drawing Collections! I dedicate these drawings to my parents who have guided me since childhood in the journey of learning to draw. Hope you find joy and inspiration in these drawings, enjoy!
+          Welcome to my Art Collections! 
+          I dedicate these drawings to my parents who have guided me since childhood in the journey of learning to draw.
+          Hope you find joy and inspiration in these drawings, enjoy!
           </p>
         </div>
         <Swiper

@@ -196,7 +196,7 @@ function Experiences() {
                         <br></br>
                     </div>
                 </div>
-                <div class="item">
+                {/* <div class="item">
                     <button class="accordion" id="accordion" onClick={() => expandPanel(7)}>
                         <div>
                             <img src={KMK}/>
@@ -269,7 +269,7 @@ function Experiences() {
                         <li>Responsible as a caster and live streaming for Valorant match</li>
                         <a href="https://drive.google.com/file/d/1vZ4cugc6mXCmw9eYk8mijdDqDC0PeM8G/view?usp=sharing" class="button" target="_blank">Certificate</a>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
         </div>
