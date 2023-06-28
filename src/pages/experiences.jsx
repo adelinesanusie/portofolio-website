@@ -19,10 +19,12 @@ function Experiences() {
         const panel  = document.getElementsByClassName("panel")
         const targetPanel = panel[index];
         if (targetPanel.classList.contains("active")) {
+            console.log("closing arg", targetPanel)
             targetPanel.classList.remove("active");
             $(targetPanel).slideUp();
         }
         else {
+            console.log("opening arg", targetPanel)
             targetPanel.classList.add("active");
             $(targetPanel).slideDown();
         }
