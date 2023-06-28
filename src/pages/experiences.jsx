@@ -30,6 +30,7 @@ function Experiences() {
 
     useEffect(() => {
         const allPanels = $(document.getElementsByClassName("panel"))
+        console.log("abcde", allPanels)
         allPanels.slideUp(0, () => {
             allPanels.removeClass("not-ready");
         });
