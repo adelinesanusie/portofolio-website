@@ -1,0 +1,238 @@
+@media (max-width: 1023px) and (min-width: 768px) {
+    /* TOP NAVIGATION */
+    .topnav-outside{
+        padding: 20px 30px 0px 30px;
+    }
+    
+    .topnav{
+        width: auto;
+        height: auto;
+    }
+    
+    .topnav a{
+        padding: 20px 25px 20px 25px;
+        font-size: 20px;
+    }
+    
+    label.checkbox-label{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .checkbox:checked + .checkbox-label .ball {
+        transform: translateX(31px);
+    }
+    
+    /* HOME */
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 120px 80px 120px 80px;
+    }
+
+    .container-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+    }
+    
+    .title-home {
+        text-align: center;
+    }
+
+    .home h2{
+        font-size: 20px;
+    }
+    
+    .home h1{
+        font-size: 36px;
+    }
+    
+    .home p{
+        font-size: 18px;
+    }
+    
+    .profile {
+        order: -1;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .profile img{
+        width: 350px;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* EXPERIENCES */
+    .title {
+        font-size: 18px;
+        word-wrap: break-word;
+        display: inline-block;
+    }
+      
+    .subtitle {
+        font-size: 16px;
+    }
+    
+    .date {
+        font-size: 16px;
+    }
+    
+    .accordion-page {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    
+    .accordion-page h2{
+        padding: 0px 80px 20px 80px;
+        font-size: 32px;
+    }
+    
+    /* ACCORDION */
+    .accordion{
+        padding: 8px;
+    }
+    
+    .accordion img {
+        margin: 8px;
+        width: 80px;  
+        height: 80px;
+    }
+    
+    .accordion span {
+        margin-left: 10px;
+    }
+    
+    .item {
+        margin-bottom: 16px;
+    }
+    
+    .panel {
+        margin: 8px 8px 0px 8px;
+        padding: 20px;
+        font-size: 18px;
+    }
+    
+    .panel.not-ready{
+        display: none;
+    }
+    
+    .panel p {
+        font-size: 16px;
+    }
+    
+    .panel li {
+        font-size: 16px;
+    }
+    
+    .button {
+        margin: 8px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    .button-group {
+        gap: 10px;
+    }
+    
+    /* GALLERY */
+    .gallery {
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+    
+    .gallery img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .container-gallery {
+        padding: 0 80px;
+    }
+    
+    .gallery h2{
+        padding: 0px 0px 20px 0px;
+        font-size: 32px;
+    }
+    
+    .gallery p{
+        padding: 0px 0px 20px 0px;
+        font-size: 18px;
+    }
+    
+    /* SKILLS */
+    .skills {
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
+    .container-skills {
+        padding: 0 80px;
+    }
+    
+    .skills h2 {
+        font-size: 32px;
+        padding: 0px 0px 20px 0px;
+    }
+
+    .three-container {
+        flex-direction: column;
+    }
+    
+    .item-container {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    .my-skill img {
+        margin: 0px 10px;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .my-skill {
+        padding: 10px 10px 20px 10px;
+    }
+    
+    .application-skill img {
+        margin: 40px 10px 0px 10px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    /* CONTACT */
+    .contact {
+        width: auto;
+        height: auto;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .social-media img {
+        width: 80px;
+        height: 80px;
+        margin: 20px 15px;
+    }
+    
+    .social-gmail {
+        margin-bottom: 10px;
+    }
+    
+    .contact h2 {
+        font-size: 32px;
+        padding: 0px 0px 20px 0px;
+    }
+    
+    .other-social-media a {
+        margin: 20px;
+    }
+}  

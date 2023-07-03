@@ -5,6 +5,7 @@ import LinkedIn from "../assets/Contact/LinkedIn.png";
 import Notion from "../assets/Contact/Notion.png";
 import Instagram from "../assets/Contact/Instagram.png";
 import Spotify from "../assets/Contact/Spotify.png";
+import Medium from "../assets/Contact/Medium.png";
 
 function Contact() {
   return (
@@ -29,6 +30,11 @@ function Contact() {
             <div className="social-media-separate">
               <a href="https://adelinesanusie.notion.site/Adeline-Sanusie-s-Portfolio-0e1add3fed494865a2de34433956d2b6?pvs=4" target="_blank" rel="noopener noreferrer">
               <img src={Notion} alt="Notion" />
+              </a>
+            </div>
+            <div className="social-media-separate">
+              <a href="https://medium.com/@adelinesanusie" target="_blank" rel="noopener noreferrer">
+              <img src={Medium} alt="Medium" />
               </a>
             </div>
             <div className="social-media-separate">

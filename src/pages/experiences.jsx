@@ -57,7 +57,7 @@ function Experiences() {
                             <span class="date">May 2023 - July 2023</span>
                         </div>
                     </button>
-                    <div class="panel  not-ready" id="panel">
+                    <div class="panel not-ready" id="panel">
                         <p>As a Toko Dizital intern, I have developed a plant disease detection application which is a comprehensive digital solution designed to support sustainable agriculture, empower farmers with accurate disease identification, and provide valuable insights for effective disease management.</p>
                         <li>Created mockups and interactive prototypes for a plant disease detection application</li>
                         <li>Developed and implemented a machine learning model for plant diseases detection</li>
@@ -75,7 +75,7 @@ function Experiences() {
                             <span class="date">March 2023 - Present</span>
                         </div>
                     </button>
-                    <div class="panel  not-ready" id="panel">
+                    <div class="panel not-ready" id="panel">
                         <p>The Student Executive Board of the Faculty of Administrative Science requires a website to facilitate the registration process of Student Executive Board 2023 members.</p>
                         <li>Conducted research and gathered user requirements to understand the target audience’s needs</li>
                         <li>Created mockups and interactive prototypes for the Student Executive Board website</li>
@@ -105,7 +105,7 @@ function Experiences() {
                             <span class="date">June 2023</span>
                         </div>
                     </button>
-                    <div class="panel  not-ready" id="panel">
+                    <div class="panel not-ready" id="panel">
                         <p>Berdonasi is a platform that enables individuals to provide monetary or product donations to those in need.
                             One of the advantages of Berdonasi is the ability to donate essential products such as groceries.
                         </p>
@@ -127,7 +127,7 @@ function Experiences() {
                             <span class="date">December 2022</span>
                         </div>
                     </button>
-                    <div class="panel  not-ready" id="panel">
+                    <div class="panel not-ready" id="panel">
                         <p>Fin-Ed is an online course application that provides learning materials on financial management.
                             This application is created in response to the low financial literacy index of 38.03% and the low financial inclusion index of 76.19% in Indonesia as of 2019.</p>
                         <li>Created a report to investigate the lack of learning resources on finance and investment in the education curriculum in Indonesia</li>
@@ -146,7 +146,7 @@ function Experiences() {
                             <span class="date">June 2022</span>
                         </div>
                     </button>
-                    <div class="panel  not-ready" id="panel">
+                    <div class="panel not-ready" id="panel">
                         <p>KonserKan is an application for purchasing live concert tickets and organizing live concerts.</p>
                         <li>Conducted Value Proposition Canvas analysis to define and refine the interaction system</li>
                         <li>Conducted user research to gain insights into user needs, preferences, and behaviors</li>
@@ -176,7 +176,7 @@ function Experiences() {
                             <span class="date">February 2023 - July 2023</span>
                         </div>
                     </button>
-                    <div class="panel  not-ready" id="panel">
+                    <div class="panel not-ready" id="panel">
                         <p>Independent Machine Learning Developer Study activities include individual learning and a final team project. In individual learning, each participant will take online classes through learning modules on Dicoding Academy and Coursera.</p>
                         <li>Explored a comprehensive range of machine learning courses</li>
                         <li>Developed essential soft skills to enhance interpersonal communication, leadership, and teamwork abilities</li>
@@ -194,7 +194,7 @@ function Experiences() {
                             <span class="date">March 2021 - January 2023</span>
                         </div>
                     </button>
-                    <div class="panel  not-ready" id="panel">
+                    <div class="panel not-ready" id="panel">
                         <p>The Department of Research and Strategic Action is a department that plays a crucial role as the driving force behind the student movement in the Faculty of Computer Science, University of Indonesia. This department is focused on creative studies to popularize issues and is responsive to various movements and tangible actions as a form of contribution and response to social and political issues at the faculty, university, national, and international levels.</p>
                         <li>Designed an infographics content about social politics which was viewed by 5500+ until 6000+ followers</li>
                         <li>Responsible for the planning of UI Gerak Bersama event held by the Faculty of Law, University of Indonesia</li>

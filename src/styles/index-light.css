@@ -13,24 +13,6 @@ body{
   margin: 0;
 }
 
-.title {
-  font-family: 'Quicksand';
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.subtitle {
-  font-family: 'Quicksand';
-  font-size: 18px;
-  font-weight: 500;
-}
-
-.date {
-  font-family: 'Quicksand';
-  font-size: 18px;
-  font-weight: 400;
-}
-
 /* TOP NAVIGATION */
 .topnav-outside{
   padding: 20px 80px 0px 80px;
@@ -88,7 +70,7 @@ label.checkbox-label{
 }
 
 .title-home{
-  flex-basis: 60%;
+  flex-basis: 70%;
 }
 
 .home h2{
@@ -130,6 +112,24 @@ label.checkbox-label{
 }
 
 /* EXPERIENCES */
+.title {
+  font-family: 'Quicksand';
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-family: 'Quicksand';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.date {
+  font-family: 'Quicksand';
+  font-size: 18px;
+  font-weight: 400;
+}
+
 .accordion-page {
   background-color: #F1F3FE;
   padding-top: 120px;
@@ -141,7 +141,7 @@ label.checkbox-label{
   background: linear-gradient(to right, #2563EB, #7ABCF9 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 0px 0px 20px 80px;
+  padding: 0px 80px 20px 80px;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
@@ -195,8 +195,7 @@ label.checkbox-label{
 
 .panel {
   background-color: #A5C1FF;
-  --base-margin: 8px;
-  margin: var(--base-margin) var(--base-margin) 0 var(--base-margin);
+  margin: 8px 8px 0px 8px;
   height: auto;
   width: auto;
   padding: 20px;
@@ -278,8 +277,8 @@ label.checkbox-label{
 .skills {
   background-color: #F1F3FE;
   height: auto;
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .container-skills {
