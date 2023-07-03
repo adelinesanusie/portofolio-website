@@ -113,10 +113,6 @@
         font-size: 18px;
     }
     
-    .panel.not-ready{
-        display: none;
-    }
-    
     .panel p {
         font-size: 18px;
     }

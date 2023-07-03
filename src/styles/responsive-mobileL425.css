@@ -1,7 +1,7 @@
-@media (max-width: 1023px) and (min-width: 768px) {
+@media (max-width: 767px) and (min-width: 425px) {
     /* TOP NAVIGATION */
     .topnav-outside{
-        padding: 20px 30px 0px 30px;
+        padding: 20px 25px 20px 25px;
     }
     
     .topnav{
@@ -10,17 +10,44 @@
     }
     
     .topnav a{
-        padding: 20px 25px 20px 25px;
-        font-size: 20px;
+        padding: 10px 8px 10px 8px;
+        font-size: 14px;
     }
     
+    .checkbox-label {
+        width: 30px;
+        height: 15px;
+        padding: 5px;
+    }
+    
+    .fa-moon, .fa-sun {
+        color: #FFFFFF;
+    }
+    
+    body.dark .fa-moon, .fa-sun {
+        color: #000000;
+    }
+
+    .checkbox-label .fas {
+        font-size: 7px;
+    }
+
+    .checkbox-label .fa-sun {
+        margin-right: 7px;
+    }
+    
+    .checkbox-label .ball {
+        width: 10px;
+        height: 10px;
+    }
+
     label.checkbox-label{
-        margin-right: 20px;
-        margin-left: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
 
     .checkbox:checked + .checkbox-label .ball {
-        transform: translateX(31px);
+        transform: translateX(16px);
     }
     
     /* HOME */
@@ -29,7 +56,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 120px 80px 120px 80px;
+        padding: 80px 25px 80px 25px;
     }
 
     .container-home {
@@ -44,15 +71,15 @@
     }
 
     .home h2{
-        font-size: 20px;
+        font-size: 14px;
     }
     
     .home h1{
-        font-size: 36px;
+        font-size: 26px;
     }
     
     .home p{
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .profile {
@@ -65,7 +92,7 @@
     }
     
     .profile img{
-        width: 350px;
+        width: 300px;
         height: auto;
         padding-left: 20px;
         padding-right: 20px;
@@ -73,38 +100,45 @@
 
     /* EXPERIENCES */
     .title {
-        font-size: 18px;
+        font-size: 14px;
         word-wrap: break-word;
         display: inline-block;
     }
       
     .subtitle {
-        font-size: 16px;
+        font-size: 12px;
+        word-wrap: break-word;
+        display: inline-block;
     }
     
     .date {
-        font-size: 16px;
+        font-size: 12px;
     }
     
     .accordion-page {
-        padding-top: 120px;
-        padding-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 30px;
     }
     
     .accordion-page h2{
-        padding: 0px 80px 20px 80px;
-        font-size: 32px;
+        padding: 0px 25px 20px 25px;
+        font-size: 20px;
     }
     
     /* ACCORDION */
+    .main-accordion {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
     .accordion{
         padding: 8px;
     }
     
     .accordion img {
         margin: 8px;
-        width: 80px;  
-        height: 80px;
+        width: 65px;  
+        height: auto;
     }
     
     .accordion span {
@@ -112,29 +146,29 @@
     }
     
     .item {
-        margin-bottom: 16px;
+        margin-bottom: 12px;
     }
     
     .panel {
         margin: 8px 8px 0px 8px;
         padding: 20px;
-        font-size: 18px;
+        font-size: 14px;
     }
     
     .panel p {
-        font-size: 16px;
+        font-size: 12px;
         text-align: justify;
     }
     
     .panel li {
-        font-size: 16px;
+        font-size: 12px;
         text-align: justify;
     }
     
     .button {
         margin: 8px;
         padding: 10px 20px;
-        font-size: 16px;
+        font-size: 12px;
     }
     
     .button-group {
@@ -143,8 +177,8 @@
     
     /* GALLERY */
     .gallery {
-        padding-top: 120px;
-        padding-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 30px;
     }
     
     .gallery img{
@@ -153,33 +187,33 @@
     }
     
     .container-gallery {
-        padding: 0 80px;
+        padding: 0 25px;
     }
     
     .gallery h2{
         padding: 0px 0px 20px 0px;
-        font-size: 32px;
+        font-size: 20px;
     }
     
     .gallery p{
         padding: 0px 0px 20px 0px;
-        font-size: 18px;
+        font-size: 14px;
         text-align: justify;
     }
     
     /* SKILLS */
     .skills {
         height: auto;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 80px;
+        padding-bottom: 30px;
     }
     
     .container-skills {
-        padding: 0 80px;
+        padding: 0 25px;
     }
     
     .skills h2 {
-        font-size: 32px;
+        font-size: 20px;
         padding: 0px 0px 20px 0px;
     }
 
@@ -194,8 +228,8 @@
     
     .my-skill img {
         margin: 0px 10px;
-        width: 80px;
-        height: 80px;
+        width: 65px;
+        height: 65px;
     }
     
     .my-skill {
@@ -203,23 +237,22 @@
     }
     
     .application-skill img {
-        margin: 40px 10px 0px 10px;
-        width: 70px;
-        height: 70px;
+        margin: 20px 10px 0px 10px;
+        width: 55px;
+        height: 55px;
     }
     
     /* CONTACT */
     .contact {
         width: auto;
         height: auto;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding: 30px 25px 30px 25px;
     }
 
     .social-media img {
-        width: 80px;
-        height: 80px;
-        margin: 20px 15px;
+        width: 65px;
+        height: 65px;
+        margin: 20px 5px;
     }
     
     .social-gmail {
@@ -227,11 +260,13 @@
     }
     
     .contact h2 {
-        font-size: 32px;
+        font-size: 20px;
         padding: 0px 0px 20px 0px;
     }
     
     .other-social-media a {
-        margin: 20px;
+        margin: 20px 0px 20px 0px;
+        display: flex;
+        justify-content: center;
     }
 }  

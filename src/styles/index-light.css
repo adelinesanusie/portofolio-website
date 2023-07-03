@@ -149,9 +149,8 @@ label.checkbox-label{
 
 /* ACCORDION */
 .main-accordion {
-  --horizontal-margin: 80px;
-  margin-left: var(--horizontal-margin);
-  margin-right: var(--horizontal-margin);
+  margin-left: 80px;
+  margin-right: 80px;
   width: auto;
   height: 100%;
   border: none;
