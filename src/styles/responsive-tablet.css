@@ -14,13 +14,17 @@
         font-size: 20px;
     }
     
+    .checkbox-label .fas {
+        font-size: 12px;
+    }
+
     label.checkbox-label{
         margin-right: 20px;
         margin-left: 20px;
     }
 
     .checkbox:checked + .checkbox-label .ball {
-        transform: translateX(31px);
+        transform: translateX(34px);
     }
     
     /* HOME */

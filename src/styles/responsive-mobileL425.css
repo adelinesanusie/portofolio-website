@@ -19,14 +19,6 @@
         height: 15px;
         padding: 5px;
     }
-    
-    .fa-moon, .fa-sun {
-        color: #FFFFFF;
-    }
-    
-    body.dark .fa-moon, .fa-sun {
-        color: #000000;
-    }
 
     .checkbox-label .fas {
         font-size: 7px;
