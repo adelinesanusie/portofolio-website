@@ -221,7 +221,7 @@
     .my-skill img {
         margin: 0px 10px;
         width: 60px;
-        height: 60px;
+        height: auto;
     }
     
     .my-skill {
@@ -231,7 +231,7 @@
     .application-skill img {
         margin: 20px 10px 0px 10px;
         width: 50px;
-        height: 50px;
+        height: auto;
     }
     
     /* CONTACT */
@@ -243,7 +243,7 @@
 
     .social-media img {
         width: 60px;
-        height: 60px;
+        height: auto;
         margin: 20px 5px;
     }
     

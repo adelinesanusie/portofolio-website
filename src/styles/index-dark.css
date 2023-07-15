@@ -140,6 +140,10 @@ body.dark .fa-moon, .fa-sun {
     top: 15%;
 }
 
+body.dark .checkbox-label .ball {
+    background-color: #000000;
+}
+
 .checkbox:checked + .checkbox-label .ball {
     transform: translateX(36px);
 }

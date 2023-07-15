@@ -4,6 +4,7 @@ import './styles/responsive-laptop1024.css'
 import './styles/responsive-tablet.css'
 import './styles/responsive-mobileL425.css'
 import './styles/responsive-mobileM375.css'
+import './styles/responsive-mobileS320.css'
 
 import Main from './pages/main';
 function App() {

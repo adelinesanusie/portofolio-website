@@ -101,7 +101,7 @@ function Experiences() {
                         </div>
                         <div>
                             <span class="title">Berdonasi Mobile Application</span><br/>
-                            <span class="subtitle">UI/UX Designer and FrontEnd Engineer</span><br/>
+                            <span class="subtitle">UI/UX Designer and Frontend Engineer</span><br/>
                             <span class="date">June 2023</span>
                         </div>
                     </button>

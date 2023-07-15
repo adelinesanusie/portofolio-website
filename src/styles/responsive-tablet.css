@@ -108,7 +108,7 @@
     .accordion img {
         margin: 8px;
         width: 80px;  
-        height: 80px;
+        height: auto;
     }
     
     .accordion span {
@@ -199,7 +199,7 @@
     .my-skill img {
         margin: 0px 10px;
         width: 80px;
-        height: 80px;
+        height: auto;
     }
     
     .my-skill {
@@ -209,7 +209,7 @@
     .application-skill img {
         margin: 40px 10px 0px 10px;
         width: 70px;
-        height: 70px;
+        height: auto;
     }
     
     /* CONTACT */
@@ -222,7 +222,7 @@
 
     .social-media img {
         width: 80px;
-        height: 80px;
+        height: auto;
         margin: 20px 15px;
     }
     

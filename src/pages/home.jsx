@@ -1,7 +1,7 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
-import ProfilePicture from "../assets/profile-picture2.jpg";
+import ProfilePicture from "../assets/profile-picture.jpg";
 
 function Home() {
   

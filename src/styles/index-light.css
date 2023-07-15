@@ -174,7 +174,7 @@ label.checkbox-label{
 .accordion img {
   margin: 8px;
   width: 80px;  
-  height: 80px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -311,7 +311,7 @@ label.checkbox-label{
 .my-skill img {
   margin: 0px 10px;
   width: 100px;
-  height: 100px;
+  height: auto;
   position: relative;
 }
 
@@ -332,7 +332,7 @@ label.checkbox-label{
 .application-skill img {
   margin: 40px 10px 0px 10px;
   width: 80px;
-  height: 80px;
+  height: auto;
 }
 
 .application-skill :hover img {
@@ -366,7 +366,7 @@ label.checkbox-label{
 
 .social-media img {
   width: 100px;
-  height: 100px;
+  height: auto;
   margin: 20px;
 }
 
